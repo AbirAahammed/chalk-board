@@ -6,11 +6,15 @@ on:
       - develop
       - master
 jobs:
-  deploy:
+  checkout:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+  build:
+    needs: checkout
+    runs-on: ubuntu-latest
+    steps:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
