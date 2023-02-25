@@ -9,7 +9,7 @@ jobs:
   checkout:
     runs-on: ubuntu-latest
     env:
-      MY_TOKEN: ${{ secrets.MAIN_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.MAIN_TOKEN }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
