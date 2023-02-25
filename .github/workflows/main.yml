@@ -8,11 +8,9 @@ on:
 jobs:
   checkout:
     runs-on: ubuntu-latest
+    env:
+      MY_TOKEN: ${{ secrets.MAIN_TOKEN }}
     steps:
-      - name: Set up token
-        env:
-          GITHUB_TOKEN: ${{ secrets.MAIN_TOKEN }}
-        run: echo $GITHUB_TOKEN
       - name: Checkout code
         uses: actions/checkout@v2
   build:
