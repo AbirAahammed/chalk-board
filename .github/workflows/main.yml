@@ -27,5 +27,5 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: jekyll-deploy
-        uses: DavidS/jekyll-deploy@1.1.1
+      - name: test artifact
+        run: ls
