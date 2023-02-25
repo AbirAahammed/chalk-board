@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build app
-        run: npm build
+        run: npm run-script build
       - name: List directories
         run: ls
 #      - name: Upload GitHub Pages artifact
