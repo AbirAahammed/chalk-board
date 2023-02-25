@@ -9,6 +9,10 @@ jobs:
   checkout:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up token
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: echo $GITHUB_TOKEN
       - name: Checkout code
         uses: actions/checkout@v2
   build:
