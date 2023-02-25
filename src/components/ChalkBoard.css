@@ -1,0 +1,20 @@
+
+
+/* this example is perfect chalk like */
+  .chalk-text {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3rem;
+    line-height: 1.2;
+    color: rgb(214, 250, 12);
+    text-shadow: 1px 1px 0 #444;
+    background-color: #222;
+    background-image: url('https://cdn.pixabay.com/photo/2014/11/30/14/11/blackboard-551955_960_720.jpg');
+    background-size: cover;
+    background-blend-mode: lighten;
+    padding: 1rem;
+    display: inline-block;
+    border: 10px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0 #444;
+  }
+  
