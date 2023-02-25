@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Set up token
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MAIN_TOKEN }}
         run: echo $GITHUB_TOKEN
       - name: Checkout code
         uses: actions/checkout@v2
