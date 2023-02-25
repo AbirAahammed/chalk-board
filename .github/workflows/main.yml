@@ -23,8 +23,8 @@ jobs:
         run: npm run-script build
       - name: List directories
         run: ls
-#      - name: Upload GitHub Pages artifact
-#        uses: actions/upload-pages-artifact@v1.0.7
-#        with:
-#          path: build
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v1.0.7
+        with:
+          path: build
 
