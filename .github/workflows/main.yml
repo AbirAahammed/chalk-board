@@ -25,8 +25,10 @@ jobs:
         run: npm install
       - name: Build app
         run: npm build
+      - name: List directories
+        run: ls -d */
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1.0.7
         with:
-          path: ./build
+          path: build
 
