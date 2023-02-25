@@ -6,8 +6,12 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.MAIN_TOKEN }}
+      access_token: ${{ secrets.MAIN_TOKEN }}
     steps:
     - id: build-publish
       uses: bitovi/github-actions-react-to-ghp@v1.1.1
       with:
+        access_token: ${{ secrets.MAIN_TOKEN }}
         path: build
